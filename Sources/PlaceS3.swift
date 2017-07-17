@@ -118,6 +118,7 @@ public class PlaceS3: Place {
                 ["name":"phone", "label": "Phone Number", "type":"String", "required":"false"],
                 ["name":"fax", "label": "Fax Number", "type":"String", "required":"false"],
                 ["name":"url", "label": "Site", "type":"String", "required":"false"],
-                ["name":"email", "label": "Email", "type":"String", "required":"false"]]
+                ["name":"email", "label": "Email", "type":"String", "required":"false"],
+                ["name":"mediaItems", "label": "Media Items", "type":"Array<String>", "required":"false"]]
     }
 }
