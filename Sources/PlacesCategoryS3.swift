@@ -29,6 +29,42 @@ public class PlacesCategoryS3: DataStoreContentJSONDictionary<String,Any> {
         }
     }
 
+    public var iconUrl: String? {
+        get {
+            return content["icon-url"] as? String
+        }
+        set {
+            set(newValue, for: "icon-url")
+        }
+    }
+
+    public var mapPinUrl: String? {
+        get {
+            return content["map-pin-url"] as? String
+        }
+        set {
+            set(newValue, for: "map-pin-url")
+        }
+    }
+
+    public var iconGradientColors: [String]? {
+        get {
+            return content["gradient-icon"] as? [String]
+        }
+        set {
+            set(newValue, for: "gradient-icon")
+        }
+    }
+
+    public var viewGradientColors: [String]? {
+        get {
+            return content["gradient-view"] as? [String]
+        }
+        set {
+            set(newValue, for: "gradient-view")
+        }
+    }
+
     public var categories: [PlacesCategoryS3]? {
         get {
             guard let categoriesContent = content["categories"] as? [PlacesCategoryS3.JSONObjectType] else { return nil }
