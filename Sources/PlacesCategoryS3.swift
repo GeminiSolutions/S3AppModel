@@ -29,21 +29,21 @@ public class PlacesCategoryS3: DataStoreContentJSONDictionary<String,Any> {
         }
     }
 
-    public var iconUrl: String? {
+    public var iconItem: String? {
         get {
-            return content["icon-url"] as? String
+            return content["icon"] as? String
         }
         set {
-            set(newValue, for: "icon-url")
+            set(newValue, for: "icon")
         }
     }
 
-    public var mapPinUrl: String? {
+    public var mapPinItem: String? {
         get {
-            return content["map-pin-url"] as? String
+            return content["map-pin"] as? String
         }
         set {
-            set(newValue, for: "map-pin-url")
+            set(newValue, for: "map-pin")
         }
     }
 
