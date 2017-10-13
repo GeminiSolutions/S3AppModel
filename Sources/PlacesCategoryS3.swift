@@ -8,7 +8,7 @@
 import Foundation
 import DataStore
 
-public class PlacesCategoryS3: DataStoreContentJSONDictionary<String,Any> {
+public class PlacesCategoryS3: DSContentJSONDictionary<String,Any> {
     public typealias JSONObjectType = [String:Any]
 
     public var name: String? {
